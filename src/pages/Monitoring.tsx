@@ -3,19 +3,14 @@ import { motion } from 'framer-motion'
 import {
   Activity,
   Bot,
-  Database,
   Clock,
   AlertTriangle,
   CheckCircle2,
   XCircle,
-  Filter,
   Download,
   RefreshCw,
-  Eye,
-  ChevronDown,
   Shield,
   User,
-  FileText,
   Zap,
 } from 'lucide-react'
 import {

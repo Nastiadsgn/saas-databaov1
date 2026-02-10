@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
-  Database,
   Plus,
   Search,
   Filter,
@@ -11,8 +10,6 @@ import {
   Clock,
   RefreshCw,
   Settings,
-  Trash2,
-  ExternalLink,
   Upload,
   FileSpreadsheet,
   FileText,

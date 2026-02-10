@@ -6,21 +6,12 @@ import {
   AlertTriangle,
   XCircle,
   TrendingUp,
-  TrendingDown,
-  BarChart3,
   Eye,
   Sparkles,
   ArrowRight,
-  ChevronDown,
   Filter,
   RefreshCw,
 } from 'lucide-react'
-import {
-  RadialBarChart,
-  RadialBar,
-  ResponsiveContainer,
-  PolarAngleAxis,
-} from 'recharts'
 
 interface DataProduct {
   id: string

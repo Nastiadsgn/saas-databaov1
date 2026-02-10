@@ -12,10 +12,8 @@ import {
   CheckCircle2,
   Clock,
   AlertTriangle,
-  Eye,
   Bot,
   ArrowRight,
-  Tag,
 } from 'lucide-react'
 
 interface CatalogItem {

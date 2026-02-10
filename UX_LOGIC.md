@@ -23,7 +23,7 @@ Databao is a SaaS data governance platform that enables users to:
 - Build, deploy, and monitor **AI Agents** powered by certified data
 - Expose everything as **MCP (Model Context Protocol) endpoints** for integration with AI tools like Cursor and Claude
 
-The core mental model is: **Connect data → Validate quality → Deploy agents → Monitor & govern**.
+The core is: **Connect data → Validate quality → Deploy agents → Monitor & govern**.
 
 ---
 

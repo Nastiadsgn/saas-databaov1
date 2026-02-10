@@ -7,7 +7,6 @@ import {
   Pause,
   Settings,
   Trash2,
-  ChevronRight,
   Target,
   Database,
   Wrench,
@@ -27,10 +26,6 @@ import {
   ExternalLink,
   GitBranch,
   Rocket,
-  Archive,
-  LayoutGrid,
-  List,
-  Search,
   Terminal,
   Eye,
   Cpu,
@@ -45,9 +40,7 @@ import {
   Server,
   Activity,
   Layers,
-  ChevronDown,
   RotateCcw,
-  Send,
 } from 'lucide-react'
 
 interface Agent {
@@ -356,7 +349,6 @@ export default function AgentFactory() {
 function AgentsTab({
   agents,
   onSelectAgent,
-  selectedAgent,
 }: {
   agents: Agent[]
   onSelectAgent: (agent: Agent) => void

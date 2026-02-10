@@ -230,7 +230,7 @@ const toolOptions = [
 
 export default function Workspace({ user }: WorkspaceProps) {
   const [domains, setDomains] = useState<Domain[]>(initialDomains)
-  const [selectedDomain, setSelectedDomain] = useState<Domain | null>(null)
+  const [selectedDomain, setSelectedDomain] = useState<Domain | null>(initialDomains[0] ?? null)
   const [searchQuery, setSearchQuery] = useState('')
   const [showSettings, setShowSettings] = useState(false)
   const [copiedEndpoint, setCopiedEndpoint] = useState<string | null>(null)

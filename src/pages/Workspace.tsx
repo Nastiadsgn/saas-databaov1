@@ -14,7 +14,7 @@ import {
   Terminal,
   FileJson,
   Zap,
-  MoreHorizontal,
+
   X,
   BarChart3,
   AlertTriangle,
@@ -886,11 +886,13 @@ function DeploySuccess({ agentName, endpoint, onClose }: { agentName: string; en
           <span className="text-sm font-medium text-bao-400">MCP Endpoint</span>
           <span className="px-2 py-0.5 text-xs font-medium bg-mint-500/20 text-mint-400 rounded">Live</span>
         </div>
-        <div className="flex items-center gap-2">
-          <code className="flex-1 px-3 py-2 text-sm font-mono bg-night-900/80 text-night-200 rounded-lg truncate">{endpoint}</code>
-          <button onClick={copyEndpoint} className={`px-3 py-2 rounded-lg font-medium text-sm ${copied ? 'bg-mint-500 text-white' : 'bg-bao-600 hover:bg-bao-500 text-white'}`}>
-            {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-          </button>
+        <div className="flex items-center">
+          <code className="flex-1 flex items-center gap-2 px-3 py-2 text-sm font-mono bg-night-900/80 text-night-200 rounded-lg">
+            <span className="flex-1 truncate">{endpoint}</span>
+            <button onClick={copyEndpoint} className={`flex-shrink-0 p-1 rounded transition-all ${copied ? 'text-mint-400' : 'text-white hover:text-bao-400'}`}>
+              {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+            </button>
+          </code>
         </div>
       </div>
       <div className="flex items-center gap-3 justify-center">
@@ -983,11 +985,13 @@ function DomainDetail({ domain, onClose, onCopy, isCopied, onDeployAgent }: { do
                 <div className="flex items-center gap-2"><Zap className="w-4 h-4 text-bao-400" /><span className="text-sm font-medium text-bao-400">MCP Endpoint</span></div>
                 <span className="px-2 py-0.5 text-xs font-medium bg-mint-500/20 text-mint-400 rounded">Live</span>
               </div>
-              <div className="flex items-center gap-2">
-                <code className="flex-1 px-3 py-2.5 text-sm font-mono bg-night-900/80 text-night-200 rounded-lg truncate">{domain.mcpEndpoint}</code>
-                <button onClick={() => onCopy(domain.mcpEndpoint)} className={`px-4 py-2.5 rounded-lg font-medium text-sm transition-all ${isCopied ? 'bg-mint-500 text-white' : 'bg-bao-600 hover:bg-bao-500 text-white'}`}>
-                  {isCopied ? <><Check className="w-4 h-4 inline mr-1" />Copied</> : <><Copy className="w-4 h-4 inline mr-1" />Copy</>}
-                </button>
+              <div className="flex items-center">
+                <code className="flex-1 flex items-center gap-2 px-3 py-2.5 text-sm font-mono bg-night-900/80 text-night-200 rounded-lg">
+                  <span className="flex-1 truncate">{domain.mcpEndpoint}</span>
+                  <button onClick={() => onCopy(domain.mcpEndpoint)} className={`flex-shrink-0 p-1 rounded transition-all ${isCopied ? 'text-mint-400' : 'text-white hover:text-bao-400'}`}>
+                    {isCopied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+                  </button>
+                </code>
               </div>
             </div>
             <div className="rounded-xl border border-night-800/50 overflow-hidden">
@@ -1088,7 +1092,7 @@ function DomainDetail({ domain, onClose, onCopy, isCopied, onDeployAgent }: { do
       <div className="p-4 border-t border-night-800/50 flex items-center gap-2 flex-shrink-0">
         <button className="flex-1 btn-secondary py-2"><RefreshCw className="w-4 h-4" />Sync</button>
         <button onClick={onDeployAgent} className="flex-1 btn-primary py-2"><Bot className="w-4 h-4" />Deploy Agent</button>
-        <button className="p-2 rounded-lg text-night-400 hover:text-night-200 hover:bg-night-800/50"><MoreHorizontal className="w-5 h-5" /></button>
+
       </div>
     </motion.div>
   )

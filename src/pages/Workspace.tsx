@@ -282,7 +282,7 @@ export default function Workspace({ user }: WorkspaceProps) {
       <div className="flex-1 flex overflow-hidden">
         {/* Domain List */}
         <motion.div animate={{ width: isFocusMode ? 280 : '100%', opacity: isFocusMode ? 0.7 : 1 }} transition={{ duration: 0.3 }} className={`border-r border-night-800/50 flex flex-col ${isFocusMode ? 'hover:opacity-100' : ''}`}>
-          <div className="p-4 border-b border-night-800/50 flex items-center justify-between">
+          <div className="px-4 py-5 border-b border-night-800/50 flex items-center justify-between">
             <div>
               <h2 className="text-sm font-semibold text-white">Data Domains</h2>
               <p className="text-xs text-night-500">{domains.length} connected</p>
